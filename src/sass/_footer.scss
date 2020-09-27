@@ -1,0 +1,113 @@
+@charset "utf-8";
+// 尾部
+
+// .wrap_footer {
+//     width: 100%;
+//     background: #1a82ee;
+//     clear: both;
+//     .item01 {
+//         width: 100%;
+//         border-bottom: 1px solid #147ce8;
+//         .width1200{
+//             width: 1200px;
+//             position: relative;
+//             margin: 0 auto; 
+//         }
+//         dl {
+//             width: 1200px;
+//             padding: 30px 0px;
+//             dd {
+//                 float: left;
+//                 display: inline;
+//                 padding-right: 58px;
+//             }
+//         }
+
+//     }
+//     .item02 {
+//     border-top: 1px solid #0c74df;
+//     border-bottom: 0;
+//     .width1200 {
+//         padding: 36px 0 40px 20px;
+//         width: 1180px;
+//         height: 162px;
+//     }
+// }
+// }
+
+//  .item01 dl dd img {
+//     float: left;
+//     display: inline;
+//     margin-right: 8px;
+// }
+
+// .medicineWorld {
+//     float: left;
+//     display: inline;
+//     color: #ffffff;
+//     p.t {
+//         font-size: 20px;
+//         font-weight: 400;
+//         font-family: "Microsoft YaHei";
+//         margin-bottom: 5px;
+//     }
+
+// }
+
+
+.wrap_footer{width:100%;background:#1a82ee;clear:both;}
+.wrap_footer .item01{width:100%;border-bottom: 1px solid #147ce8;}
+.wrap_footer .item01 dl{width:1200px;padding:30px 0px;}
+.wrap_footer .item01 dl dd{float:left;display:inline;padding-right:58px;}
+.wrap_footer .item01 dl dd img{float:left;display:inline;margin-right:8px;}
+.wrap_footer .item01 dl dd .medicineWorld{float:left;display:inline;color:#ffffff;}
+.wrap_footer .item01 dl dd .medicineWorld p.t{font-size:20px;font-weight:400;font-family:"Microsoft YaHei";margin-bottom:5px;}
+.wrap_footer .item01 .width1200,.footer_list .width1200{width: 1200px;position: relative;margin:0 auto;}
+.wrap_footer .item01 .width1200 .safeBuy{position:absolute;left:0;top:0;width: 240px;height: 86px;}
+.wrap_footer .item02 .width1200{padding:36px 0 40px 20px;width: 1180px;height: 162px;}
+.wrap_footer .item02{border-top: 1px solid #0c74df;border-bottom:0;}
+.wrap_footer .item02 .lside{float:left;width: 248px;color:#fff;border-right: 1px solid #0c74df;padding-right:50px; }
+.wrap_footer .item02 .width980 .lside{width: 106px;}
+.wrap_footer .item02 .lside .title{padding-bottom: 8px; text-align: center;font-family: "Microsoft YaHei";font-size: 14px;}
+.wrap_footer .item02 .lside .title02{padding-top: 8px;width: 78px;line-height:16px;text-align: center;font-family: "Microsoft YaHei";font-size: 14px;}
+.wrap_footer .item02 .lside .appCode{float:left;width: 106px;}
+.wrap_footer .item02 .lside .appCode .code{width: 106px;height: 106px;background: url(http://res.360kad.com/theme/default/img/2014newKad/codeallbgs.gif) 0 0 no-repeat;}
+.wrap_footer .item02 .lside .appCode .pl8{padding-top: 8px; text-align: center;font-family: "Microsoft YaHei";font-size: 14px;}
+.wrap_footer .item02 .lside .weixinCode{float:right;width: 106px;}
+.wrap_footer .item02 .lside .weixinCode .code{width: 106px;height: 106px;background: url(http://res.360kad.com/theme/default/img/2014newKad/codeallbgs.gif) -106px 0 no-repeat;}
+.wrap_footer .item02 .lside .ios,.wrap_footer .item02 .lside .android{display:inline;margin-top: 8px;float:left;}
+.wrap_footer .item02 .lside .ios a{float:left;width: 29px;height: 29px;background: url(http://res.360kad.com/theme/default/img/2014newKad/codeallbgs.gif) -212px 0 no-repeat;}
+.wrap_footer .item02 .lside .ios a:hover{background-position:-270px 0;}
+.wrap_footer .item02 .lside .android a{float:left;width: 29px;height: 29px;background: url(http://res.360kad.com/theme/default/img/2014newKad/codeallbgs.gif) -241px 0 no-repeat;}
+.wrap_footer .item02 .lside .android a:hover{background-position:-299px 0;}
+.wrap_footer .item02 .lside .line{margin:12px 14px 0 14px;float:left;height: 24px;border-left:1px solid #147ce8;border-right:1px solid #439ffd;overflow: hidden;}
+.wrap_footer .item02 .mside{float:right;}
+.wrap_footer .item02 .width980 .mside{padding-left: 0;float: right;}
+.wrap_footer .item02 .mside li{float:left;width: 114px;text-align:left;color:#fff;line-height: 22px;}
+.wrap_footer .item02 .mside .phonePic{padding-top: 4px;padding-left: 60px;width:192px;border-left: 1px solid #0b72de;}
+.wrap_footer .item02 .mside .phonePic .pt4{padding-top: 4px;}
+.wrap_footer .item02 .mside li .title{padding-bottom: 12px; font: bold 16px/24px "";}
+.wrap_footer .item02 .mside li a{color:#fff;text-decoration: none;font-family: "Microsoft YaHei"; }.wrap_footer .item02 .mside li a:hover{color:#fff;text-decoration:underline;}
+
+.footer_list{padding-top: 10px;width:100%;overflow: hidden;line-height:22px;}
+.footer_list a{padding-right: 12px;color:#666;}
+.footer_list a:hover,.footer_list .aboutKadList a:hover,.footer_list .hyRz li a:hover{color:#ff0000;text-decoration: underline;}
+.footer_list p .title{font-weight:bold;color:#666;}
+.footer_list p .fl{float:left;}
+.footer_list p.friendLinks{height: 22px;overflow: hidden;}
+.footer_list p .linkBox{width: 1092px;text-align:left;}
+.footer_list .aboutKadList{margin-top: 6px;padding-top:6px;border-top:1px solid #cdcdcd;text-align: center;}
+.footer_list .aboutKadList a{padding-right: 0;color:#666;position: relative;}
+.footer_list .aboutKadList a.pifa_shop span{background:url(http://res.360kad.com/theme/default/img/product/2014new/pifa_new.png);width: 23px;height: 10px;display: inline-block;position: absolute;top: -7px;left: 27px;}
+.footer_list .diploma_list{padding:0 0 20px 16px;text-align:center;}
+.footer_list .diploma_list a{padding-right: 0;}
+.footer_list .diploma_list .pr8{padding-right: 8px;}
+.footer_list .hyRz{/*padding-left: 224px;*/;width:1200px;text-align:center;}
+.footer_list .hyRz li{padding-left: 8px;/*float:left;*/display:inline-block;*display:inline;*zoom:1;}
+.footer_list .hyRz li a{padding-right: 0;float:left;color:#333;line-height:18px;}
+.footer_list .hyRz li .txt{padding-right:4px;width:82px;background: url(http://res.360kad.com/theme/default/img/2014newKad/rightLine.png) no-repeat right 6px;}
+.footer_list .hyRz li .item01{padding-left: 1px;width:60px;}
+.footer_list .hyRz li .item02{width: 56px;}
+.footer_list .hyRz li .item03{padding:4px 8px 0 0;background: url(http://res.360kad.com/theme/default/img/2014newKad/rightLine.png) no-repeat right 6px;}
+.footer_list .bottom{padding: 5px 0;text-align: center;color:#666;}
+.footer_list .bottom a{padding-right: 0;}

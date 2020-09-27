@@ -2,10 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta name="keywords" content="苏宁易购网上商城,苏宁电器,Suning,手机,电脑,冰箱,洗衣机,相机,数码,家居用品,鞋帽,化妆品,母婴用品,图书,食品,正品行货" />
-    <meta name="description" content="苏宁易购-综合网上购物平台，商品涵盖家电、手机、电脑、超市、母婴、服装、百货、海外购等品类。送货更准时、价格更超值、上新货更快，正品行货、全国联保、可门店自提，全网更低价，让您放心去喜欢！" />
-    <title>苏宁易购(Suning.com)-送货更准时、价格更超值、上新货更快</title>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="康爱多网上药店,网上买药,网上药店,药品网" />
+    <meta name="Description"
+        content="买药去哪个网站？网上药店哪个好？买药品最好的网站【康爱多网上药店】经国家药监局批准的排名前列的药房网,互联网药品交易服务编号：粤C20110001,可选同仁堂等品牌产品的网上药店!" />
+    <title>【康爱多网上药店】-药品网购,网上买药就上排名前列并提供医药网资讯的康爱多药品网</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" pagemodule="index_module" ></script>
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -18,10 +25,967 @@
             - 布局头部和底部其他页面完全套用。
             - 首页渲染，渲染几块核心的代码。(渲染两大块数据)
      -->
-    <div class="bannerAD"></div>
-    <div class="top_nav"></div>
-    <div class="header"></div>
-    <div class="nav"></div>
+
+    <!-- 首页顶部广告 -->
+    <div class="header_img">
+        <div class="area">
+            <a href="http://help.360kad.com/Novice/IntegralDesc?kzone=top" target="_blank">
+                <img src="https://image.360kad.com/group2/M00/AB/D1/CgAgFVycGTCAKf0EAADo6l4Xvv4004.jpg" alt="页面顶部">
+            </a>
+        </div>
+    </div>
+    <!-- 页头部件  导航栏  登入注册 -->
+    <div class="header_top">
+        <div class="area header_t">
+            <div class="header_t_l">
+                <div class="YnewNoLogin">欢迎来到康爱多网上药店！ <a onclick="TopClickLogin();" rel="nofollow" href="javascript:void(0);">登录</a>  
+                <a onclick="TopClickRegister();" rel="nofollow" href="javascript:void(0);">注册</a></div>
+                <ul class="YnewYesLogin" style="display: none;">
+                  <li>欢迎回来！</li>
+                    <li class="YUserName"></li>
+                    <li class="Yout"></li>
+                </ul>
+            </div>
+            <div class="header_t_r">
+                <ul class="hNavList">
+                    <li class="Ywebnav">
+                        <span class="Ycen"></span>
+                        <span class="Yico_dian"></span>
+                        <span class="tlast">网站导航</span>
+                        <div class="Ytopnavdiv">
+                            <dl>
+                                <dt>特色频道</dt>
+                                <dd><a href="//www.360kad.com/dymhh/men.shtml" target="_blank">男科中心</a></dd>
+                                <dd><a href="//www.360kad.com/medical/" target="_blank">医疗器械</a></dd>
+                            </dl>
+                            <dl class="d2">
+                                <dt>健康工具</dt>
+                                <dd><a href="//www.360kad.com/zhuanti/kad_zsyd.shtml" target="_blank">掌上药店</a></dd>
+                                <dd><a href="//www.360kad.com/dymhh/selfhelp.shtml" target="_blank">自助找药</a></dd>
+                                <!--<dd><a href="//cart.360kad.com/Assistant" target="_blank">便捷购</a></dd>-->
+                            </dl>
+                            <dl>
+                                <dt>健康知多点</dt>
+                                <dd><a href="//www.360kad.com/Medication/" target="_blank">健康指南</a></dd>
+                                <dd><a href="//ask.360kad.com/" target="_blank">健康问答</a></dd>
+                                <dd><a href="//www.360kad.com/jknews/List_170.shtml" target="_blank">肝胆科</a></dd>
+                                <dd><a href="//pfk.360kad.com/" target="_blank">皮肤科</a></dd>
+                                <dd><a href="//hx.360kad.com/" target="_blank">呼吸科</a></dd>
+                                <dd><a href="//jf.360kad.com/" target="_blank">减肥瘦身</a></dd>
+                                <dd><a href="//sex.360kad.com/" target="_blank">两性健康</a></dd>
+                                <dd><a href="//fk.360kad.com/" target="_blank">妇科</a></dd>
+                                <dd><a href="//baby.360kad.com/" target="_blank">母婴</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="YService">
+                        <span class="Ycen"></span>
+                        <span class="Yico_dian"></span>
+                        <span class="tlast">客户服务</span>
+                        <div class="Ytopnavdiv">
+                            <dl class="Ymykadc">
+                                <dd><a rel="nofollow" href="//help.360kad.com/" target="_blank">帮助中心</a></dd>
+                                <dd><a rel="nofollow" href="//help.360kad.com/AboutKad/LianXiWoMen" target="_blank">联系我们</a></dd>
+                                <dd><a rel="nofollow" href="//help.360kad.com/Feature/TouSuJianYi" target="_blank">投诉建议</a></dd>
+                                <dd style="display:none"><a rel="nofollow" href="//www.360kad.com/Supplier" target="_blank">厂商合作</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="ttel">400-8811-020</li>
+                    <li class="tcart"><a href="https://cart.360kad.com/cart/index">购物车<span name="kadCartNum" style="color:red;padding:0;font-weight:bold;">0</span>件</a></li>
+                    <li class="Ymyorder">
+                        <span class="Ycen"></span>
+                        <span class="Yico_dian"></span>
+                        <a rel="nofollow" href="//user.360kad.com/order?Type=0" class="tlast" target="_blank">我的订单</a>
+                        <div class="Ytopnavdiv">
+                            <dl class="Ymyorderc">
+                                <dd class="YNopay"><a rel="nofollow" href="//user.360kad.com/order?type=1&amp;state=1" target="_blank">待付款订单</a></dd>
+                                <dd class="YNosure"><a rel="nofollow" href="//user.360kad.com/order?type=2&amp;state=4" target="_blank">待确认收货</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="Ymykad">
+                        <span class="Ycen"></span>
+                        <span class="Yico_dian"></span>
+                        <a rel="nofollow" href="//user.360kad.com/user" class="tlast" target="_blank">我的康爱多</a>
+                        <div class="Ytopnavdiv">
+                            <dl class="Ymykadc">
+                                <dd><a rel="nofollow" href="//user.360kad.com/Rx" target="_blank">我的处方</a></dd>
+                                <dd><a rel="nofollow" href="//user.360kad.com/Favorite/Index" target="_blank">我的收藏</a></dd>
+                                <dd><a rel="nofollow" href="//user.360kad.com/address/index" target="_blank">收货地址</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页头 搜索框 -->
+    <div class="header area">
+        <!-- 页头 logo -->
+        <div class="header_l">
+
+        </div>
+        <!-- 页头  搜索栏 -->
+        <div class="header_r">
+
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="navc area">
+
+        </div>
+    </div>
+
+    <!-- 页面主体 -->
+<div class="mainBody">
+        <div class="itmes_wrap">
+            <!-- 轮播 -->
+            <div class="middleSide">
+                <ul>
+                    <li>
+                        <a href="" class="fadeBox">
+                            <img src="https://image.360kad.com/group1/M00/41/19/CgAgDl9tYnKAKEMkAAH6RH73-VY222.jpg"
+                                alt="优思明-专题1">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体 上  超值秒杀 健康推荐  广告-->
+        <div class="mainBody_box area">
+
+            <!-- 超值秒杀 -->
+            <div class="hotPro">
+                <div class="hotProHeader">
+                    <h3>
+                        超值秒杀
+                    </h3>
+                    <div class="hotProM">
+                        <!--剩余时间  -->
+                        <p id="TimeCountDonw_" class="seckill_p2">
+                            <i></i>剩余<span>0</span>天<span>0</span>时<span>0</span>分<span>0</span>秒</p>
+                    </div>
+                    <div class="hotProR">
+
+                        <div class="hotPage" id="hotPage">
+                        </div>
+                        <div class="direction">
+                            <!-- 右箭头 -->
+                            <span class="r"><img
+                                    src="https://res.360kad.com/theme/default/img/product/2016new/rightIcon.png"
+                                    data-pin-nopin="true"></span>
+                            <!-- 左箭头 -->
+                            <span class="s"><img
+                                    src="https://res.360kad.com/theme/default/img/product/2016new/leftIcon.png"
+                                    data-pin-nopin="true"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="hotProC">
+                    <ul style="width: 2396px;left: 0px;">
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">4.6</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#1010429930"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group1/M00/0E/B8/CgAgEFZo4A-AN4TQAABAAFwZVoE26.jpeg"
+                                        title="海氏海诺 创口贴 卡通型 8片"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#1010429930"
+                                            target="_blank" title="海氏海诺 创口贴 卡通型 8片">海氏海诺 创口贴 卡通型 8片</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥1.8</span><span
+                                            class="oldPrice">￥3.9</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">7.3</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#40912"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group1/M00/20/3B/CgAgEFbXsfeADCV_AAHepruP-sc965.jpg_320x320.jpg"
+                                        title="水仙 风油精 3ml"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#40912" target="_blank"
+                                            title="水仙 风油精 3ml">水仙 风油精 3ml</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥3.5</span><span
+                                            class="oldPrice">￥4.8</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">5.4</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#1010084840"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group1/M00/18/D7/CgAgDl8WZ8WARweHAAF18ftQNhU137.jpg_320x320.jpg"
+                                        title="云南白药 云南白药创可贴(防水超薄型) 1.5cm*2.3cm*5片/盒"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#1010084840"
+                                            target="_blank" title="云南白药 云南白药创可贴(防水超薄型) 1.5cm*2.3cm*5片/盒">云南白药
+                                            云南白药创可贴(防水超薄型) 1.5cm*2.3cm*5片/盒</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥3.5</span><span
+                                            class="oldPrice">￥6.5</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">5.0</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#40928"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group1/M00/9D/A3/CgAgEFj9ZiCASG7oAAEpcjZvvGU328.jpg_320x320.jpg"
+                                        title="慧宝源 十滴水 5ml*10支"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#40928" target="_blank"
+                                            title="慧宝源 十滴水 5ml*10支">慧宝源 十滴水 5ml*10支</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥3.9</span><span
+                                            class="oldPrice">￥7.8</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li style="border-right: 0px;">
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">7.8</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#27544"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group2/M00/CE/DF/CgAgFV2domaAbTsLAAGrVmAXYE4364.jpg_320x320.jpg"
+                                        title="广宇 冬凌草片 0.26g*24片"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#27544" target="_blank"
+                                            title="广宇 冬凌草片 0.26g*24片">广宇 冬凌草片 0.26g*24片</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥3.9</span><span
+                                            class="oldPrice">￥5</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">9.0</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#40890"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group1/M00/1E/33/CgAgDl8eLeSAUQDLAAH-hNd2jWs595.jpg_320x320.jpg"
+                                        title="龙虎 清凉油 3g"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#40890" target="_blank"
+                                            title="龙虎 清凉油 3g">龙虎 清凉油 3g</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥4.5</span><span
+                                            class="oldPrice">￥5</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">8.3</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#172801"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group2/M00/B2/EB/CgAgFFzk_gmAR13FAADcOzmmDPY545.jpg_320x320.jpg"
+                                        title="恒久远 红霉素眼膏 0.5%:2g"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#172801" target="_blank"
+                                            title="恒久远 红霉素眼膏 0.5%:2g">恒久远 红霉素眼膏 0.5%:2g</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥4.8</span><span
+                                            class="oldPrice">￥5.8</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">6.0</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#178186"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group2/M00/B7/81/CgAgFF0Vv5aANnHfAAJoU2YiadQ452.jpg_320x320.jpg"
+                                        title="养方堂 宝视茶枸杞决明茶 5g/袋"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#178186" target="_blank"
+                                            title="养方堂 宝视茶枸杞决明茶 5g/袋">养方堂 宝视茶枸杞决明茶 5g/袋</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥5.9</span><span
+                                            class="oldPrice">￥9.9</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">5.5</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#164405"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group2/M00/9B/77/CgAgFVvarg2Afq9UAAE4jom9oJA328.jpg_320x320.jpg"
+                                        title="时珍牌 时珍润喉宝青梅绿茶硬质糖果(含木糖醇) 50g(2.5g*20粒)"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#164405" target="_blank"
+                                            title="时珍牌 时珍润喉宝青梅绿茶硬质糖果(含木糖醇) 50g(2.5g*20粒)">时珍牌 时珍润喉宝青梅绿茶硬质糖果(含木糖醇)
+                                            50g(2.5g*20粒)</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥5.9</span><span
+                                            class="oldPrice">￥10.8</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li style="border-right: 0px;">
+                            <div class="zhe"
+                                style="background:url(http://res.360kad.com/theme/default/img/product/2016new/zebg.png) no-repeat;">
+                                <span class="zheS">8.8</span>折</div>
+                            <p style="text-align:center"><a href="/zhuanti/pc_new_seckill.shtml#154705"
+                                    target="_blank"><img style="width:150px;height:150px;"
+                                        src="https://image.360kad.com/group2/M00/82/69/CgAgFVtRPQuADd8yAAGppEqNSgU798.jpg_320x320.jpg"
+                                        title="恒诚制药 复方鱼腥草片(薄膜衣片) 0.393g*100片"></a></p>
+                            <div class="clum">
+                                <dl>
+                                    <dd class="secentLi"><a href="/zhuanti/pc_new_seckill.shtml#154705" target="_blank"
+                                            title="恒诚制药 复方鱼腥草片(薄膜衣片) 0.393g*100片">恒诚制药 复方鱼腥草片(薄膜衣片) 0.393g*100片</a></dd>
+                                    <dd class="thirdLi"><span class="newPrice">￥6.9</span><span
+                                            class="oldPrice">￥7.8</span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- 健康推荐 -->
+            <div class="changeP area" id="changeP">
+                <h3>健康推荐</h3>
+                <a href="javascript:void(0);" class="changeBtn">
+                    换一批
+                    <img src="https://res.360kad.com/theme/default/img/product/2016new/changbtn2.jpg">
+                </a>
+                <div class="clear"></div>
+                <ul style="position: relative;">
+                    <li>
+                        <a href="" class="imgpro">
+                            <img style="width:180px;height:180px;" src="https://image.360kad.com/group1/M00/0C/3D/CgAgEVYc_0WAcn28AAAgAJ5osis89.jpeg" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">
+                        </a>
+                        <div class="hotPadding">
+                            <p class="nameC">
+                                <a href="/product/2113.shtml?kzone=find_maybe_pcindex" target="_blank" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">奇正 消痛贴膏 (2.5ml:1.2g)*5贴</a>
+                            </p>
+                            <p class="priceC">￥80.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="imgpro">
+                            <img style="width:180px;height:180px;" src="https://image.360kad.com/group1/M00/0C/3D/CgAgEVYc_0WAcn28AAAgAJ5osis89.jpeg" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">
+                        </a>
+                        <div class="hotPadding">
+                            <p class="nameC">
+                                <a href="/product/2113.shtml?kzone=find_maybe_pcindex" target="_blank" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">奇正 消痛贴膏 (2.5ml:1.2g)*5贴</a>
+                            </p>
+                            <p class="priceC">￥80.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="imgpro">
+                            <img style="width:180px;height:180px;" src="https://image.360kad.com/group1/M00/0C/3D/CgAgEVYc_0WAcn28AAAgAJ5osis89.jpeg" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">
+                        </a>
+                        <div class="hotPadding">
+                            <p class="nameC">
+                                <a href="/product/2113.shtml?kzone=find_maybe_pcindex" target="_blank" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">奇正 消痛贴膏 (2.5ml:1.2g)*5贴</a>
+                            </p>
+                            <p class="priceC">￥80.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="imgpro">
+                            <img style="width:180px;height:180px;" src="https://image.360kad.com/group1/M00/0C/3D/CgAgEVYc_0WAcn28AAAgAJ5osis89.jpeg" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">
+                        </a>
+                        <div class="hotPadding">
+                            <p class="nameC">
+                                <a href="/product/2113.shtml?kzone=find_maybe_pcindex" target="_blank" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">奇正 消痛贴膏 (2.5ml:1.2g)*5贴</a>
+                            </p>
+                            <p class="priceC">￥80.00</p>
+                        </div>
+                    </li>
+                    
+                   
+                    <li style="margin-right: 0px;">
+                            <a href="" class="imgpro">
+                                <img style="width:180px;height:180px;" src="https://image.360kad.com/group1/M00/0C/3D/CgAgEVYc_0WAcn28AAAgAJ5osis89.jpeg" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">
+                            </a>
+                            <div class="hotPadding">
+                                <p class="nameC">
+                                    <a href="/product/2113.shtml?kzone=find_maybe_pcindex" target="_blank" title="奇正 消痛贴膏 (2.5ml:1.2g)*5贴">奇正 消痛贴膏 (2.5ml:1.2g)*5贴</a>
+                                </p>
+                                <p class="priceC">￥80.00</p>
+                            </div>
+                        </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <!-- 广告图 -->
+            <div class="clear"></div>
+            <div class="ad1">
+                <!--部件开始:ad_home_banner_n,分组:广告部件-->
+                <a id="ad_home_banner_n1" href="http://www.360kad.com/zhuanti/pintuan_pc.shtml?kzone=banner" target="_blank">
+                    <img src="https://image.360kad.com/group1/M00/40/6A/CgAgD19qrKKAHe7uAAHJUe61_hI850.jpg" alt="拼团-2">
+                </a>
+             </div>
+
+             <!-- 家庭常备 1F -->
+             <div class="floor">
+                <div class="louHeader">
+                    <span class="louN color1">1F 家庭常备</span>
+                    <div class="louR">
+                        <dl>
+                            <dt>热门关键字：</dt>
+                            <dd class="notPro">
+                                <span class="hotIcon">
+                                    <img src="https://res.360kad.com/theme/default/img/product/2016new/hotIcon.png">
+                                </span><a href="http://www.360kad.com/Category_835/Index.aspx?kzone=f1_keyword" target="_blank">皮肤瘙痒</a>
+                            </dd>
+                            <dd><a href="http://www.360kad.com/Category_836/Index.aspx?kzone=f1_keyword" target="_blank">皮炎湿疹</a></dd>
+                            <dd class="padding20"><a href="http://www.360kad.com/Category_820/Index.aspx?kzone=f1_keyword" target="_blank">跌打损伤</a></dd>
+                        </dl>
+                    </div>
+                </div>
+    
+                <div class="contextLou" id="contextLou1">
+                    <div class="contextL">
+                        <div class="louLink">
+    
+                            <!--部件开始:pro_label,分组:广告部件-->
+    <ul >
+    
+          <li><a href="http://search.360kad.com/?pageText=%E9%A3%8E%E5%AF%92%E6%84%9F%E5%86%92&amp;?kzone=f1_wz1" target="_blank"  style="color:#f7082a">风寒感冒</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E6%B6%88%E5%8C%96%E4%B8%8D%E8%89%AF&amp;?kzone=f1_wz2" target="_blank"  style="color:#">消化不良</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E6%B8%85%E7%83%AD%E8%A7%A3%E6%AF%92&amp;?kzone=f1_wz3" target="_blank"  style="color:#">清热解毒</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E6%99%95%E8%BD%A6%E6%99%95%E8%88%B9&amp;?kzone=f1_wz4" target="_blank"  style="color:#">晕车晕船</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E5%8F%A3%E8%85%94%E6%BA%83%E7%96%A1&amp;?kzone=f1_wz1" target="_blank"  style="color:#">口腔溃疡</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E8%83%83%E7%97%9B%E8%83%83%E8%83%80&amp;?kzone=f1_wz6" target="_blank"  style="color:#">胃痛胃胀</a></li>
+          <li><a href="/Category_2212/Index.aspx?kzone=f1_wz1" target="_blank"  style="color:#f7082a">口罩</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E5%92%B3%E5%97%BD&amp;?kzone=f1_wz8" target="_blank"  style="color:#">咳嗽</a></li>
+          <li><a href="/Category_843/Index.aspx?kzone=f1_wz9" target="_blank"  style="color:#">创口护理</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E8%84%9A%E6%B0%94&amp;?kzone=f1_wz10" target="_blank"  style="color:#">脚气</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E5%92%BD%E5%96%89%E7%82%8E&amp;?kzone=f1_wz11" target="_blank"  style="color:#">咽喉炎</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E6%B5%81%E8%A1%8C%E6%80%A7%E6%84%9F%E5%86%92&amp;?kzone=f1_wz12" target="_blank"  style="color:#f7082a">流行性感冒</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E7%89%99%E5%91%A8%E7%82%8E&amp;?kzone=f1_wz13" target="_blank"  style="color:#">牙周炎</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E7%9A%AE%E8%82%A4%E7%98%99%E7%97%92&amp;?kzone=f1_wz14" target="_blank"  style="color:#f7082a">皮肤瘙痒</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E9%BC%BB%E5%A1%9E&amp;?kzone=f1_wz15" target="_blank"  style="color:#">鼻塞</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E8%85%B9%E6%B3%BB&amp;?kzone=f1_wz16" target="_blank"  style="color:#">腹泻</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E7%97%94%E7%96%AE&amp;?kzone=f1_wz17" target="_blank"  style="color:#">痔疮</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E7%9C%BC%E7%96%B2%E5%8A%B3&amp;?kzone=f1_wz18" target="_blank"  style="color:#">眼疲劳</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E8%9A%8A%E8%99%AB%E5%8F%AE%E5%92%AC&amp;?kzone=f1_wz19" target="_blank"  style="color:#">蚊虫叮咬</a></li>
+          <li><a href="http://search.360kad.com/?pageText=%E5%8F%A3%E8%85%94%E6%8A%A4%E7%90%86&amp;?kzone=f1_wz20" target="_blank"  style="color:#">口腔护理</a></li>
+    </ul>
+    <div class="clear"></div>
+    <!--部件结束:pro_label--> 
+                        </div>
+    
+    
+                        <div class="louLogo">
+                            <!--部件开始:link_logo,分组:广告部件-->
+    <ul >
+                                    <li id="pro_link1_logo1"><a href="http://search.360kad.com/?pageText=999&amp;kzone=f1_p1"  target="_blank"><img src="https://image.360kad.com/group1/M00/1D/BF/CgAgEFaoYoaAeSxHAAAKyLYkEWk049.jpg" alt="" /></a></li>
+                                    <li id="pro_link1_logo2"><a href="http://search.360kad.com/?pageText=%E7%99%BD%E4%BA%91%E5%B1%B1&amp;kzone=f1_p2"  target="_blank"><img src="https://image.360kad.com/group1/M00/1D/BF/CgAgEFaoYyGABkMYAAAGAuIJfuA418.jpg" alt="" /></a></li>
+                                    <li id="pro_link1_logo3"><a href="http://search.360kad.com/?pageText=%E6%95%AC%E4%BF%AE%E5%A0%82&amp;kzone=f1_p3"  target="_blank"><img src="https://image.360kad.com/group1/M00/1D/BF/CgAgEFaoY06AEAmYAAANLZH4PGU977.jpg" alt="" /></a></li>
+    </ul>
+    <!--部件结束:link_logo-->
+    
+    
+    
+                        </div>
+                    </div>
+    
+                    <div class="contextM" id="contextM1">
+                        <!-- <span class="pinterPrv" id="pinterPrv1"><</span>
+                            <span class="pinterNext" id="pinterNext1">></span>  -->
+                        <!--部件开始:ad_home_floor1_lunbo,分组:广告部件-->
+    <div class="pinter" id="pinter1"> 
+            <dl>
+                            <dd class="actv" ></dd>
+                            <dd  ></dd>
+                            <dd  ></dd>
+                            <dd  ></dd>
+            </dl>
+          </div>
+    
+          <div class="switchB" id="switchB1">
+            <ul>
+                             <li>
+                <a href="/product/2081357.shtml?kzone=f1_lb1" target="_blank" id="ad_home_floor1_lunbo9">
+                    <img src="https://image.360kad.com/group2/M00/00/90/CgAgFV7omaGAYBCXAAKa8M-TZyE861.jpg" alt="首页1楼轮播">
+                </a>
+            </li>
+                             <li>
+                <a href="/product/171003.shtml?kzone=f1_lb1" target="_blank" id="ad_home_floor1_lunbo5">
+                    <img src="https://image.360kad.com/group1/M00/26/E9/CgAgD18rbE2AXsaYAALcoGtHnHE641.jpg" alt="首页1楼轮播">
+                </a>
+            </li>
+                             <li>
+                <a href="/Product/9998362.shtml?kzone=f1_lb1" target="_blank" id="ad_home_floor1_lunbo01">
+                    <img src="https://image.360kad.com/group2/M00/90/FC/CgAgFVuGNXuAHkL6AAJCbXHa_9g797.jpg" alt="首页1楼轮播1">
+                </a>
+            </li>
+                             <li>
+                <a href="/Product/389.shtml?kzone=f1_lb1" target="_blank" id="ad_home_floor1_lunbo8">
+                    <img src="https://image.360kad.com/group2/M00/41/14/CgAgFVqnZNaAJTr8AAGVuuhmWL4842.jpg" alt="首页1楼轮播2">
+                </a>
+            </li>
+     </ul>
+     </div>
+    <!--部件结束:ad_home_floor1_lunbo-->
+    
+                    </div>
+                    <div class="contextR">
+                        <ul>
+                            <li class="floor_m">
+                                <!--部件开始:ad_home_banner_n,分组:广告部件-->
+    <a id="ad_home_floor1_m2" href="http://www.360kad.com/product/1343.shtml?kzone=f1_sp1" target="_blank"><img src="https://image.360kad.com/group2/M00/9A/01/CgAgFFvFW3GAA4miAAEERnmMokg886.jpg" alt="1F家庭常备"></a> 
+    <!--部件结束:ad_home_banner_n-->
+    
+                            </li>
+                            <!--部件开始:2016_index_Floor1,分组:广告部件-->
+    <!--部件开始:2016_home_floor_product1,分组:产品部件-->
+    <li> 
+       <p class="pic">
+                <a href="/product/145906.shtml?kzone=f1_sp" target="_blank"><img border="0" alt="太极 藿香正气口服液 10ml*10支/盒"  title="太极 藿香正气口服液 10ml*10支/盒" src="https://image.360kad.com/group2/M00/41/77/CgAgFVqovGaAPIktAAHZ-I95LeU816.jpg_180x180.jpg"></a>
+    </p>
+                 <p class="proName"><a href="/product/145906.shtml?kzone=f1_sp" title="太极 藿香正气口服液 10ml*10支/盒" target="_blank">
+    理气和中 高性价比
+    </a></p>
+                 <p class="proNumber"><a href="/product/145906.shtml?kzone=f1_sp" title="太极 藿香正气口服液 10ml*10支/盒" target="_blank">太极 藿香正气口服液 10ml*10支/盒</a></p>
+                 <p class="proPrice">￥23.80</p>            
+      </li>
+    <!--部件结束:2016_home_floor_product1-->
+    <!--部件开始:2016_home_floor_product1,分组:产品部件-->
+    <li> 
+       <p class="pic">
+                <a href="/product/855.shtml?kzone=f1_sp" target="_blank"><img border="0" alt="辅舒良 丙酸氟替卡松鼻喷雾剂 0.05%(50μg*120喷)"  title="辅舒良 丙酸氟替卡松鼻喷雾剂 0.05%(50μg*120喷)" src="https://image.360kad.com/group1/M00/A5/C3/CgAgEFke_HCAdcEXAAGbt02bDII362.jpg_180x180.jpg"></a>
+    </p>
+                 <p class="proName"><a href="/product/855.shtml?kzone=f1_sp" title="辅舒良 丙酸氟替卡松鼻喷雾剂 0.05%(50μg*120喷)" target="_blank">
+    过敏性鼻炎专用
+    
+    </a></p>
+                 <p class="proNumber"><a href="/product/855.shtml?kzone=f1_sp" title="辅舒良 丙酸氟替卡松鼻喷雾剂 0.05%(50μg*120喷)" target="_blank">辅舒良 丙酸氟替卡松鼻喷雾剂 0.05%(50μg*120喷)</a></p>
+                 <p class="proPrice">￥81.00</p>            
+      </li>
+    <!--部件结束:2016_home_floor_product1-->
+    <!--部件开始:2016_home_floor_product1,分组:产品部件-->
+    <li> 
+       <p class="pic">
+                <a href="/product/2141.shtml?kzone=f1_sp" target="_blank"><img border="0" alt="珍视明 四味珍层冰硼滴眼液(曾用名:珍视明滴眼液) 15ml"  title="珍视明 四味珍层冰硼滴眼液(曾用名:珍视明滴眼液) 15ml" src="https://image.360kad.com/group2/M00/BB/8E/CgAgFF06UvmAAJa5AALjPlPerIM683.jpg_180x180.jpg"></a>
+    </p>
+                 <p class="proName"><a href="/product/2141.shtml?kzone=f1_sp" title="珍视明 四味珍层冰硼滴眼液(曾用名:珍视明滴眼液) 15ml" target="_blank">
+    清热解痉 缓解视疲劳
+    </a></p>
+                 <p class="proNumber"><a href="/product/2141.shtml?kzone=f1_sp" title="珍视明 四味珍层冰硼滴眼液(曾用名:珍视明滴眼液) 15ml" target="_blank">珍视明 四味珍层冰硼滴眼液(曾用名:珍视明滴眼液) 15ml</a></p>
+                 <p class="proPrice">￥28.30</p>            
+      </li>
+    <!--部件结束:2016_home_floor_product1-->
+    <!--部件开始:2016_home_floor_product1,分组:产品部件-->
+    <li> 
+       <p class="pic">
+                <a href="/product/119401.shtml?kzone=f1_sp" target="_blank"><img border="0" alt="养无极 补肺丸 9g*10丸*4板/盒"  title="养无极 补肺丸 9g*10丸*4板/盒" src="https://image.360kad.com/group2/M00/F6/C5/CgAgFF6T3faAR1jCAAHAXXJZFBY041.jpg_180x180.jpg"></a>
+    </p>
+                 <p class="proName"><a href="/product/119401.shtml?kzone=f1_sp" title="养无极 补肺丸 9g*10丸*4板/盒" target="_blank">
+    品牌补肺  益气平喘</a></p>
+                 <p class="proNumber"><a href="/product/119401.shtml?kzone=f1_sp" title="养无极 补肺丸 9g*10丸*4板/盒" target="_blank">养无极 补肺丸 9g*10丸*4板/盒</a></p>
+                 <p class="proPrice">￥298.00</p>            
+      </li>
+    <!--部件结束:2016_home_floor_product1-->
+    <!--部件结束:2016_index_Floor1-->
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2F -->
+            <!-- 3F -->
+            <!-- 4F -->
+            <!-- 5F -->
+
+            <!-- 热门品牌 -->
+            <div class="hotBrand">
+                <h3>热门品牌</h3>
+                <ul>
+                    <!--部件开始:ad_home_hotlogo,分组:广告部件-->
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E7%99%BE%E5%A4%9A%E9%82%A6&amp;kzone=rmpp1" target="_blank" id="ad_home_hotlogo01">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEFbj3d-AZnuBAAAKXWNhZL8937.jpg" alt="百多邦">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E9%99%88%E6%9D%8E%E6%B5%8E&amp;kzone=rmpp2" target="_blank" id="ad_home_hotlogo02">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEFbj3f-AWDErAAAJTgX2CnU407.jpg" alt="陈李济">
+                </a>
+            </li>
+                             <li>
+                <a href="https://www.360kad.com/zhuanti/njtrt_pc.shtml" target="_blank" id="ad_home_hotlogo14">
+                    <img src="https://image.360kad.com/group1/M00/20/0E/CgAgDl8hG52AYvJYAAAp7plPcFQ165.jpg" alt="南京同仁堂">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E5%93%88%E8%8D%AF&amp;kzone=rmpp4" target="_blank" id="ad_home_hotlogo04">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEFbj3iuASDjrAAAKgHIl3iI141.jpg" alt="哈药集团">
+                </a>
+            </li>
+                             <li>
+                <a href="http://www.360kad.com/Spzt/www_yjjc.shtml?pageType=3&amp;kzone=rmpp5" target="_blank" id="ad_home_hotlogo05">
+                    <img src="https://image.360kad.com/group1/M00/AB/33/CgAgEFk3zFaAIyc2AAATEyv9o1o630.jpg" alt="万特">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E5%8D%8E%E9%82%A6&amp;kzone=rmpp6" target="_blank" id="ad_home_hotlogo06">
+                    <img src="https://image.360kad.com/group2/M00/36/0E/CgAgFVpz1AeAUhvAAAAXogl3lW8250.jpg" alt="华邦制药">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E6%98%8E%E6%AC%A3%E8%8D%AF%E4%B8%9A&amp;kzone=rmpp7" target="_blank" id="ad_home_hotlogo07">
+                    <img src="https://image.360kad.com/group1/M00/AF/E2/CgAgEFld0oCAUE3rAAAScObbZ6Y153.jpg" alt="明欣药业">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E8%91%B5%E8%8A%B1&amp;kzone=rmpp8" target="_blank" id="ad_home_hotlogo08">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEVbj3oOAaEZlAAAIPl7jJ8s425.jpg" alt="葵花">
+                </a>
+            </li>
+                             <li>
+                <a href="http://www.360kad.com/zhuanti/zxppg_index.shtml?kzone=rmpp9" target="_blank" id="ad_home_hotlogo09">
+                    <img src="https://image.360kad.com/group2/M00/B9/B0/CgAgFF0i_MOAcEuIAAAmJfFOjJY717.jpg" alt="中新药业">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E4%B8%89%E8%AF%BA&amp;kzone=rmpp10" target="_blank" id="ad_home_hotlogo10">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEFbj3qmAK7siAAAILo_1J4E340.jpg" alt="三诺">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B7&amp;kzone=rmpp11" target="_blank" id="ad_home_hotlogo11">
+                    <img src="https://image.360kad.com/group2/M00/54/00/CgAgFFri9paAI6HJAAAhYjs1sO8095.jpg" alt="阿斯利康">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E5%A4%AA%E5%AE%89%E5%A0%82&amp;kzone=rmpp12" target="_blank" id="ad_home_hotlogo12">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEFbj3tyAdpy6AAAIpcOX7U8248.jpg" alt="太安堂">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E9%A6%99%E9%9B%AA&amp;kzone=rmpp13" target="_blank" id="ad_home_hotlogo13">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEVbj3vSAf6UcAAAJS9Ld9tk578.jpg" alt="香雪制药">
+                </a>
+            </li>
+                             <li>
+                <a href="http://search.360kad.com/?pageText=%E8%BF%AA%E5%B7%A7&amp;kzone=rmpp3" target="_blank" id="ad_home_hotlogo03">
+                    <img src="https://image.360kad.com/group1/M00/21/8E/CgAgEVbj3haAeoabAAAKFEDMYtU143.jpg" alt="迪巧">
+                </a>
+            </li>
+    <!--部件结束:ad_home_hotlogo-->
+                </ul>
+            </div>
+
+            <!-- 中慈助医 -->
+            <div id="footer-link">
+                <div class="footer-link-title">中慈助医</div>
+                <div class="footer-link-list">
+                    <a href="https://shenqing.ccfpap.org/?tdsourcetag=s_pcqq_aiomsg" target="_blank" rel="nofollow">中慈助医患者援助申请平台</a>
+                    <a href="https://yuanzhu.ccfpap.org/?tdsourcetag=s_pcqq_aiomsg" target="_blank" rel="nofollow">中慈助医发药点管理系统</a>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- 尾部 -->
+            <div class="wrap_footer" style="width: 100%;">
+                <div class="item01">
+                    <div class="width1200 area">
+                        <dl>
+                            <dd>
+                                <!-- <a href="/zhuanti/trust.shtml"></a> -->
+                                <img src="http://res.360kad.com/theme/default/img/product/2016new/zheng1.png">
+                                <div class="medicineWorld">
+                                    <p class="t">正品保障</p>
+                                    <p>国家认证 正规合法</p>
+                                </div>
+                            </dd>
+                            <dd>
+                                <!-- <a href="javascript:void(0);"></a> -->
+                                <img src="http://res.360kad.com/theme/default/img/product/2016new/zheng2.png">
+                                <div class="medicineWorld">
+                                    <p class="t">专业药师</p>
+                                    <p>用药全程指导 </p>
+                                </div>
+                            </dd>
+                            <dd>
+                                <!-- <a href="javascript:void(0);"> </a> -->
+                                <img src="http://res.360kad.com/theme/default/img/product/2016new/sou.png">
+                                <div class="medicineWorld">
+                                    <p class="t">厂家授权 </p>
+                                    <p>厂家授权 正品渠道</p>
+                                </div>
+                            </dd>
+                            <dd>
+                                <!-- <a href="javascript:void(0);"></a> -->
+                                <img src="http://res.360kad.com/theme/default/img/product/2016new/zheng5.png">
+                                <div class="medicineWorld">
+                                    <p class="t">货到付款</p>
+                                    <p>货到付款 购药无忧</p>
+                                </div>
+                            </dd>
+            
+                            <dd>
+                                <!-- <a href="javascript:void(0);"></a> -->
+                                <img src="http://res.360kad.com/theme/default/img/product/2016new/zheng4.png">
+                                <div class="medicineWorld">
+                                    <p class="t">隐私配送</p>
+                                    <p>安全放心 隐私配送</p>
+                                </div>
+                            </dd>
+                            <dd style="padding-right:0;">
+                                <!-- <a href="javascript:void(0);"></a> -->
+                                <img src="http://res.360kad.com/theme/default/img/product/2016new/zheng3.png">
+                                <div class="medicineWorld">
+                                    <p class="t"> 满79元包邮</p>
+                                    <p> 全场满79元包邮</p>
+                                </div>
+                            </dd>
+                            <div class="clear"></div>
+                        </dl>
+            
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--康爱多掌上药店-->
+                <div class="item01 item02">
+                    <div class="width1200 area ">
+                    <div class="lside">
+                            <div class="appCode">
+                                <p class="title">手机购药</p>
+                                <p class="code"></p>
+                                <p class=" pl8">
+                                    注册送100元
+                                </p>
+                            </div>
+                            <div class="weixinCode">
+                                <p class="title">微信购药</p>
+                                <p class="code" style="background:url(http://res.360kad.com/theme/default/img/2018newKad/code1.jpg) no-repeat center center;background-size:106px 106px;"></p>
+                                <p class="title02" style="width:106px;margin:0;">
+                                   抽现金红包
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mside">
+                            <ul class="">
+                                <li>
+                                    <p class="title">新手指南</p>
+                                    <p><a href="http://help.360kad.com/Shopping/shopWm" target="_blank" rel="nofollow">购物流程</a></p>
+                                    <p><a href="http://help.360kad.com/Novice/VipClass" target="_blank" rel="nofollow">会员级别</a></p>
+                                    <p><a href="http://help.360kad.com/Novice/IntegralDesc" target="_blank" rel="nofollow">积分说明</a></p>
+                                    <p><a href="http://help.360kad.com/Pay/Coupon" target="_blank" rel="nofollow">优惠券</a></p>
+                                    <p><a href="http://help.360kad.com/Novice/Question" target="_blank" rel="nofollow">常见问题</a></p>
+                                </li>
+                                <li>
+                                    <p class="title">配送方式</p>
+                                    <p><a href="http://help.360kad.com/Delivery/Freight" target="_blank" rel="nofollow">配送范围及运费</a></p>
+                                    <p><a href="http://help.360kad.com/Delivery/Privsend" target="_blank" rel="nofollow">隐私配送</a></p>
+                                    <p><a href="http://help.360kad.com/Delivery/Receipt" target="_blank" rel="nofollow">商品验收及签收</a></p>
+                                </li>
+                                <li>
+                                    <p class="title">支付方式</p>
+                                    <p><a href="http://help.360kad.com/Pay/Cash" target="_blank" rel="nofollow">货到付款</a></p>
+                                    <p><a href="http://help.360kad.com/Pay/OnlinePay" target="_blank" rel="nofollow">网上支付</a></p>
+                                            <p><a href="http://help.360kad.com/Pay/Mention" target="_blank" rel="nofollow">药店自提</a></p>
+                                </li>
+                                <li>
+                                    <p class="title">售后服务</p>
+                                    <p><a href="http://help.360kad.com/SaleAfter/ReturnsFlow" target="_blank" rel="nofollow">退换货流程</a></p>
+                                    <p><a href="http://help.360kad.com/SaleAfter/ReturnsPolicy" target="_blank" rel="nofollow">退换货政策</a></p>
+                                    <p><a href="http://help.360kad.com/SaleAfter/RefundFlow" target="_blank" rel="nofollow">退款流程</a></p>
+                                    <p><a href="//www.360kad.com/zhuanti/exchange.shtml" target="_blank" rel="nofollow">退换无忧</a></p>
+                                </li>
+                                <li>
+                                    <p class="title">特色服务</p>
+                                    <p><a href="http://user.360kad.com/club" target="_blank" rel="nofollow">会员俱乐部</a></p>
+                                    <p><a href="http://help.360kad.com/Feature/TouSuJianYi" target="_blank" rel="nofollow">投诉建议</a></p>
+                                    <p><a href="http://help.360kad.com/Feature/YongYaoZiXun" target="_blank" rel="nofollow">健康咨询</a></p>
+                                    <p><a href="http://help.360kad.com/Feature/MianZeShengMing" target="_blank" rel="nofollow">免责声明 </a></p>
+                                </li>
+                                <li class="phonePic">
+                                    <p><img src="http://res.360kad.com/theme/default/img/product/2016new/kadPhoneBg.png" alt=""></p>
+                                    <!--  <p class="pt4">订购服务时间：9：00—23：00</p>
+                                    <p>售后服务时间：9：00—22：30</p> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!--END康爱多掌上药店-->
+            </div>
+            
+            
+            <!-- 尾巴列表 -->
+            <div class="footer_list" style="width: 100%;">
+                <div class="width1200">
+            
+                    <p>
+                        <span class="title">政府机构：</span><a href="http://www.nhc.gov.cn/" target="_blank" rel="nofollow">国家卫生健康委员会</a>
+                        <a href="http://www.samr.gov.cn/" target="_blank" rel="nofollow">国家市场监督管理总局</a>
+                        <a href="http://wsjkw.gd.gov.cn/" target="_blank" rel="nofollow">广东省卫生健康委员会</a>
+                        <a href="http://mpa.gd.gov.cn/" target="_blank" rel="nofollow">广东省药品监督管理局</a>
+            <a href="http://www.nmpa.gov.cn" target="_blank" rel="nofollow">国家药品监督管理局</a><a href="http://amr.gd.gov.cn/" target="_blank" rel="nofollow">广东省市场监督管理局</a>
+                    </p>
+                    <!--友情链接的部件-->
+                    <p class=" friendLinks" style="height: 22px;">
+                        <span class="title fl">友情链接：</span>
+                        <span class="friendList fl linkBox">
+                            <a target="_blank" href="http://www.qgyyzs.net">环球医药招商网</a>
+                            <a target="_blank" href="http://pfk.360kad.com/">皮肤病</a>
+                            <a target="_blank" href="http://ypk.39.net">药品文章</a>
+                            <a target="_blank" href="http://www.yy960.com">医药招商网</a>
+                            <a target="_blank" href="http://www.cnkang.com/">中华康网</a>
+                            <a target="_blank" href="http://www.69jk.cn">69健康</a>
+                            <a target="_blank" href="http://www.zyctd.com/">中药材</a>
+                            <a target="_blank" href="http://www.wiki8.com/">医学百科</a>
+                            <a target="_blank" href="http://product.pcbaby.com.cn/">PCbaby母婴用品</a>
+                            <a target="_blank" href="http://www.kq36.cn/">康强网</a>
+                            <a target="_blank" href="http://91baby.mama.cn/">妈妈网论坛</a>
+                            <a target="_blank" href="http://www.39yst.com/">三九养生堂</a>
+                            <a target="_blank" href="http://tag.120ask.com/">有问必答网知识库</a>
+                            <a target="_blank" href="http://yao.xywy.com/">药品网</a>
+                            <a target="_blank" href="http://www.yuemei.com/">悦美网</a>
+                            <a target="_blank" href="http://zyk.99.com.cn">中医网</a>
+                            <a target="_blank" href="http://www.med126.com/">医学全在线</a>
+                            <a target="_blank" href="http://jf.360kad.com">减肥</a>
+                            <a target="_blank" href="http://www.2liang.net/">爱靓网时尚女性</a>
+                            <a target="_blank" href="http://www.366dao.com/">新互联医药网</a>
+                            <a target="_blank" href="http://www.pingguolv.com/">养生网</a>
+                            <a target="_blank" href="http://www.fx120.net/">放心医苑网</a>
+                            <a target="_blank" href="http://www.xywy.com/">寻医问药健康网</a>
+                            <a target="_blank" href="http://m.360kad.com/">掌上药店</a>
+                            <a target="_blank" href="http://ask.360kad.com">健康问答</a>
+                            <a target="_blank" href="http://www.12yao.com">十二药网网上药店</a>
+                            <a target="_blank" href="http://www.315jiage.cn/">药品价格315网</a>
+                            <a target="_blank" href="http://drug.39.net/">39健康网药品频道</a>
+                            <a target="_blank" href="http://www.yidianling.com">心理咨询</a>
+                            
+                            <a target="_blank" href="http://www.baiji.com.cn/">康德乐大药房</a>
+                            <a target="_blank" href="http://www.kzj365.com/">网上药店</a>
+                            <a target="_blank" href="http://www.800pharm.com/">八百方网上药店</a>
+                            <a target="_blank" href="http://www.360yyk.com">药品批发</ a>
+                            <a target="_blank" href="https://www.kadhealth.com">康爱多互联网医院</ a>
+                        </span>
+                    </p>
+            
+                    <!--关于康爱多网上药店-->
+                    <p class="aboutKadList">
+                        <a rel="nofollow" href="http://www.360kad.com/zhuanti/pc_pifa.shtml" target="_blank" class="pifa_shop">批发商洽<span></span></a> |
+                        <a rel="nofollow" href="http://help.360kad.com/AboutKad/kadJieShao" target="_blank">关于我们</a> |
+                        <a href="http://www.360kad.com/zhuanti/kad_zsyd.shtml" target="_blank" rel="nofollow">掌上药店</a> |
+                        <a rel="nofollow" href="http://help.360kad.com/about/entitygz" target=" _blank">实体药店</a> |
+                        <a rel="nofollow" href="http://help.360kad.com/AboutKad/JiaRuKangAiDuo" target="_blank">加入康爱多</a> |
+                        <a href="http://help.360kad.com/AboutKad/LianXiWoMen" target="_blank" rel="nofollow">联系我们</a>  |
+                        <a style="display:none" href="http://www.360kad.com/zhuanti/service_provder.shtml" target="_blank" rel="nofollow">厂商合作</a>
+                        <a href="http://help.360kad.com/AboutKad/JingYingRenZheng" rel="nofollow" target="_blank">经营认证</a> |
+                        <a rel="nofollow" href="//help.360kad.com/Shopping/YinSiShengMing" target="_blank">隐私政策</a> |
+                        <a rel="nofollow" href="http://help.360kad.com/About/FriendlyLink" target="_blank">友情链接</a> |
+                        <a href="http://www.360kad.com/TagList.aspx" target="_blank">TAG列表</a> |
+                        <a href="http://www.360kad.com/SiteMap.shtml" target="_blank">网站地图</a> |
+                        <a href="http://cps.360kad.com/" target="_blank">CPS联盟</a>
+                    </p>
+                    <p class="diploma_list" style="padding-bottom:0px">
+                        <a class="pr8" rel="nofollow" title="互联网药品交易服务资格证书" target="_blank" href="http://help.360kad.com/about/AuthenBusiness">互联网药品交易服务资格证书</a>|
+                        <span class="bottomPadding01">
+                            <a rel="nofollow" title="互联网药品信息服务资格证书" target="_blank" href="http://help.360kad.com/About/AuthenInfo">互联网药品信息服务资格证书</a>
+                        </span>|
+                        <span class="bottomPadding01">
+                            <a rel="nofollow" title="执业药师证" target="_blank" href="http://help.360kad.com/About/AuthenPractice">执业药师证</a>
+                        </span>|
+                        <span class="bottomPadding02">
+                            <a rel="nofollow" title="药品经营许可证" target="_blank" href="http://help.360kad.com/About/AuthenManage">药品经营许可证</a>
+                        </span>|
+            
+                        <span class="bottomPadding02">
+                            <a rel="nofollow" title="食品经营许可证" target="_blank" href="http://help.360kad.com/About/AuthenLiuTong">食品经营许可证</a>
+                        </span>|
+                        <span class="bottomPadding02">
+                            <a rel="nofollow" title="公司营业执照" target="_blank" href="http://help.360kad.com/About/AuthenLicense">公司营业执照</a>
+                        </span>|
+            
+                    </p>
+                    <p class="diploma_list" style="padding-bottom:0px">
+                        <span>
+                            <a href="http://help.360kad.com/About/AuthenTeleservice" target="_blank" rel="nofollow">增值电信业务经营许可证 </a>
+                        </span>|
+                        <span>
+                            <a href="http://help.360kad.com/About/AuthenMedical" target="_blank" rel="nofollow">医疗器械经营许可证</a>
+                        </span>|
+                        <span>
+                            <a href="http://www.360kad.com/zhuanti/authen_category2.shtml" target="_blank" rel="nofollow">第二类医疗器械经营备案凭证</a>
+                        </span>|
+                        <span>
+                            <a href="http://www.360kad.com/zhuanti/authen_YiLiaoQiXieBeiAn.shtml" target="_blank" rel="nofollow">医疗器械网络销售备案</a>
+                        </span>|
+                    </p>
+                    <!--END关于康爱多网上药店-->
+                    <!--行业认证-->
+                    <ul class="hyRz ">
+                        <li>
+                            <a rel="nofollow" href="https://beian.miit.gov.cn/#/Integrated/recordQuery" target="_blank" title="粤ICP备10212320号-1">
+                                <img src="//res.360kad.com/theme/default/img/tool_icon1.png" alt="粤ICP备10212320号-1" style="display: inline;">
+                            </a>
+                            <a class="txt" rel="nofollow" title="粤ICP备10212320号-1" target="_blank" href="http://beian.miit.gov.cn/state/outPortal/loginPortal.action">粤ICP备10212320号-1</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="http://www.gdnet110.gov.cn/" target="_blank" title="网络110报警服务">
+                                <img src="http://res.360kad.com/theme/default/img/tool_icon2.png" alt="网络110报警服务" style="display: inline;">
+                            </a>
+                            <a class="txt item01" rel="nofollow" title="网络110报警服务" target="_blank" href="http://www.gdnet110.gov.cn/">
+                                网络110报警服务
+                            </a>
+                        </li>
+            
+                        <li>
+                            <a rel="nofollow" href="http://wljg.gdgs.gov.cn/corpsrch.aspx?key=440101000120723" target="_blank" title="红盾电子链接标识">
+                                <img data-original="//res.360kad.com/theme/default/img/tool_icon5.jpg" src="//res.360kad.com/theme/default/img/tool_icon5.jpg" alt="" style="display: inline;">
+                            </a>
+                            <a class="txt item01 item02" rel="nofollow" title="红盾电子链接标识" target="_blank" href="http://wljg.gdgs.gov.cn/corpsrch.aspx?key=440101000120723">
+                                红盾电子链接标识
+                            </a>
+                        </li>
+                        <li>
+                            <a key="5491366eefbfb06e545f4a75" logo_size="83x30" logo_type="common" rel="nofollow" href="http://www.anquan.org">
+                                <script src="//static.anquan.org/static/outer/js/aq_auth.js"></script>
+                            </a>
+                        </li>
+             <li>
+                            <a style="display:block;padding-top:4px;"  rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102001321" target="_blank">
+            
+                                <span style="display:none;"></span>
+                                <img src="//res.360kad.com/theme/default/img/beian.png" alt="粤公网安备 44011102001321号" width="30" height="30" style="border: none;">    粤公网安备 44011102001321号
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="bottom">&copy;2010-2020 广东<a href="http://www.360kad.com">康爱多网上药店</a>版权所有，并保留所有权利</p>
+                    <!--END行业认证-->
+            
+                </div>
+            </div>
+
+ 
 </body>
 
 </html>

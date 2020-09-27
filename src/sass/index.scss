@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "header";
+@import "mainBody";
+@import "footer";
+
+
+
+$pagewidth:1200px;
+$bgcolor:#abcdef;
+$t:text-decoration;
+$n:none;
+$fontsize:14px;
+
+// 版心
+.area{
+    width: $pagewidth;
+    margin: 0 auto;
+    overflow: hidden
+};
+
+.clearfix{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+};
+
+.clear{ 
+    clear:both; 
+    height:0; 
+    width:100%;
+};
+
+
+
+
+

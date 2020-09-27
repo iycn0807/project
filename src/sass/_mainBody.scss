@@ -1,0 +1,285 @@
+@charset "utf-8";
+@import "hotPro";
+@import "changP";
+@import "floor";
+@import "hotBrand";
+
+
+
+// 页面主体
+
+.mainBody{
+    width: 100%;
+    height: 1000px;
+};
+
+
+// 轮播外壳
+
+.mainBody .itmes_wrap{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    height: 400px;
+    // overflow: hidden;
+    background: red;
+};
+
+
+
+//轮播图
+
+.middleSide li {
+    // display: none;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    opacity: 0;
+    background: pink;
+    // filter: alpha(opacity=0);
+    .fadeBox{
+        width: 810px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -420px;
+        // z-index: 4;
+        display: block;
+        img{
+            display: block;
+            vertical-align: bottom;
+            height: 400px;
+            width: 810px;
+        }
+    }
+    
+}
+
+// .mainBody .itmes_wrap .middleSide li .fadeBox {
+//     width: 810px;
+//     height: 400px;
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     margin-left: -420px;
+//     z-index: 4;
+//     display: block;
+// }
+
+// .mainBody .itmes_wrap .middleSide li img {
+//     display: block;
+//     vertical-align: bottom;
+//     height: 400px;
+//     width: 810px;
+// }
+
+//<!-- 主体 上  超值秒杀 健康推荐  广告-->   
+
+
+.mainBody_box {
+    // background: #000;
+}
+
+.d1{
+    margin-bottom: 12px;
+    overflow: hidden;
+    a {
+        color: #666;
+        text-decoration: none;
+        img {
+            border: none;
+            vertical-align: top;
+        }
+    }
+}
+
+// // <!-- 超值秒杀 -->
+// .hotPro {
+//     margin-bottom: 20px;
+//     .hotProHeader {
+//         margin-bottom: 33px;
+//         height: 36px;
+
+//     }
+//     #hotProC {
+//         height: 230px;
+//         width: 1198px;
+//         position: relative;
+//         overflow: hidden;
+//     }
+// }
+
+// .hotProHeader {
+//     // 标题
+//     h3{
+//         line-height: 36px;
+//         font-size: 24px;
+//         font-family: "微软雅黑";
+//         font-weight: normal;
+//         float: left;
+//         width: 100px;
+//     }   
+//     .hotProM {
+//         float: left;
+//         width: 980px;
+//         height: 36px;
+//         background: url(/theme/default/img/product/2016new/xian2.jpg) repeat-x left center;
+//         margin: 0 auto;
+//         .seckill_p2 {
+//             position: relative;
+//             padding-left: 30px;
+//             font-size: 14px;
+//             color: #414141;
+//             height: 36px;
+//             background: #fff;
+//             float: left;
+//             line-height: 36px;
+//         }
+//     }
+//     .hotProR {
+//         float: right;
+//         width: 115px;
+//         height: 36px;
+//         line-height: 36px;
+//         font-size: 14px;
+//         display: block;
+//         color: #222;
+//         text-align: right;
+//      .direction {
+//             height: 36px;
+//             width: 66px;
+//             float: right;
+//         }
+//         span.r {
+//             margin-right: 2px;
+//         }
+//         span.s {
+//             margin-right: 5px;
+//         }
+//          span.s,  span.r {
+//             display: block;
+//             width: 28px;
+//             height: 28px;
+//             float: right;
+//             cursor: pointer;
+//             margin-top: 2px;
+//             img {
+//                 border: none;
+//                 vertical-align: top;
+//             }
+//         }
+//     }
+// }
+
+// .hotPro .hotPage {
+//     width: 45px;
+//     height: 36px;
+//     float: left;
+//      b {
+//         height: 36px;
+//         line-height: 36px;
+//         font-size: 16px;
+//         padding: 0 1px;
+//     }
+// }
+
+
+// // 
+// #hotProC ul {
+//     height: 252px;
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 10000px;
+//     z-index: 2;
+//  li {
+//         list-style: none;
+//         float: left;
+//         width: 238.6px;
+//         height: 252px;
+//         border-right: 1px solid #eaeaea;
+//         position: relative;
+//         .zhe {
+//             width: 56px;
+//             height: 56px;
+//             position: absolute;
+//             right: 12px;
+//             top: 0px;
+//             font-size: 14px;
+//             color: #ffffff;
+//             line-height: 56px;
+//             font-family: "微软雅黑";
+//             text-align: center;
+//             z-index: 2;
+//             .zheS {
+//                 font-size: 20px;
+//             }
+//         }
+//         p {
+//             display: block;
+//             margin-block-start: 1em;
+//             margin-block-end: 1em;
+//             margin-inline-start: 0px;
+//             margin-inline-end: 0px;
+//             a {
+//                 display: block;
+//                 img {
+//                     border: none;
+//                     vertical-align: top;
+//                     width: 150px;
+//                     height: 150px;
+//                 }
+//             }
+//         }
+//         .clum {
+//             padding: 15px 0px 0 20px;
+//             text-align: left;
+//             dl {
+//                 display: block;
+//                 margin-block-start: 1em;
+//                 margin-block-end: 1em;
+//                 margin-inline-start: 0px;
+//                 margin-inline-end: 0px;
+//             }
+//             .secentLi {
+//                 color: #868686;
+//                 font-size: 14px;
+//                 padding-top: 8px;
+//                 display: block;
+//                 a {
+//                     overflow: hidden;
+//                     white-space: nowrap;
+//                     // -o-text-overflow: ellipsis;
+//                     text-overflow: ellipsis;
+//                     font-size: 14px;
+//                     color: #666;
+//                     text-decoration: none;
+//                     display: block;
+//                 }
+//             }
+//             .thirdLi {
+//                 padding-top: 5px;
+//                 text-align: left;
+//                 display: block;
+//                 margin-inline-start: 40px;
+                
+//                 .newPrice {
+//                     font-size: 14px;
+//                     color: #ff4b47;
+//                     padding-right: 12px;
+//                 }
+//                 .oldPrice {
+//                     font-size: 12px;
+//                     color: #888888;
+//                     text-decoration: line-through;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+
+

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+      list-style: none;
+  }
+
+  html{ height:100%;}
+body{ color:#333; font-family:"微软雅黑"; font-size:12px; background:#fff; }
+div{height:auto; }
+ul, li{ list-style:none;}
+img{ border:none; vertical-align:top;}
+h1, h2, h3, h4, h5, h6{ font-size:14px;}
+a{ color:#666; text-decoration:none;}
+a:hover{ color:#ff0000; text-decoration:underline}
+input, button, select{ font-size:12px; vertical-align:middle;}
+textarea{ padding:5px;color:#333;}
+table{ border:none;border-collapse:collapse;}

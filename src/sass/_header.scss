@@ -5,7 +5,7 @@
 // 1.最上面广告图
 .header_img{
     width: 100%;
-    background: red;
+    // background: red;
     a{
         display: block;
         img{
@@ -27,7 +27,7 @@
 
 .header{
     height: 113px;
-    background: #000;
+    // background: #000;
 }; 
 
 // <!-- 导航栏 -->
@@ -38,23 +38,201 @@
 
 .navc{
     position: relative;
-    background: green;
+    // background: green;
     height: 38px;
     border-bottom: 2px solid #0063cd;
 }
+.nav .navc {
+	position:relative;
+	z-index:10;
+	margin-left:auto;
+	margin-right:auto;
+	width:1200px;
+	height:40px;
+}
+.nav  a {
+	font-family:"Microsoft YaHei";
+}
+.header_t,.header,.navc,.Crumbs {
+	margin-left:auto;
+	margin-right:auto;
+	width:1200px;
+}
+.header_t.w980,.header.w980,.navc.w980,.Crumbs.w980 {
+	width:980px;
+}
+.header_top {
+	background:#f1f1f1;
+	height:30px;
+	color:#767676;
+	line-height:30px;
+}
+.header_t_l {
+	float:left;
+}
+.header_t_r {
+	float:right;
+}
+.hNavList li {
+	float:right;
+	padding:0px 8px;
+	position:relative;
+	z-index:23;
+}
+li.tphone,li.ttel,li.tcart {
+	background:url(http://res.360kad.com/theme/default/img/product/2014new/ico_t2.png) no-repeat 6px -74px;
+	padding-left:20px;
+}
+li.ttel {
+	background-position:1px -40px;
+	font-weight:bold;
+	font-family:"Microsoft YaHei";
+}
+li.tcart a b {
+	color:#e61510;
+	font-size:15px;
+	font-weight:normal;
+	padding:0 2px;
+}
+li.tcart {
+	background-position:-3px -4px;
+	font-weight:bold;
+	font-family:"Microsoft YaHei";
+}
+li.tcart a {
+	margin:0px 3px;
+}
+.tlast {
+	padding-right:12px;
+	cursor:pointer;
+}
+.tlast:hover {
+	color:red;
+}
 
-.nav .navc{position:relative;z-index:10;margin-left:auto; margin-right:auto; width:1200px;height:40px;}
-.nav  a{font-family:"Microsoft YaHei";}
-.header_t, .header, .navc, .Crumbs{ margin-left:auto; margin-right:auto; width:1200px;}
-.header_t.w980, .header.w980, .navc.w980, .Crumbs.w980{ width: 980px;}
-.header_top{ background:#f1f1f1; height:30px; color:#767676; line-height:30px;}
-.header_t_l{ float:left; }
-.header_t_r{ float:right;}
-.hNavList li{ float:right; padding:0px 8px; position:relative; z-index:23;}
-li.tphone, li.ttel, li.tcart{ background:url(http://res.360kad.com/theme/default/img/product/2014new/ico_t2.png) no-repeat 6px -74px; padding-left:20px;}
-li.ttel{ background-position:1px -40px; font-weight:bold;font-family:"Microsoft YaHei";}
-li.tcart a b{color:#e61510;font-size:15px;font-weight: normal;padding:0 2px;}
-li.tcart{ background-position:-3px -4px; font-weight:bold;font-family:"Microsoft YaHei";}
-li.tcart a{ margin:0px 3px;}
-.tlast {padding-right:12px;cursor:pointer;}
-.tlast:hover{color:red;}
+
+//logo以及搜索
+.Ymykadc,.Ymyorderc,.YServicec,.Ywebnavc {
+	background:#FFFFFF;
+	line-height:24px;
+	padding:5px 7px;
+}
+.Ytopnavdiv {
+	display:none;
+}
+.YnewYesLogin {
+	display:none;
+}
+.YnewYesLogin li {
+	float:left;
+	padding-right:10px;
+}
+.header {
+	height:112px;
+}
+.header_l {
+	float:left;
+	width:342px;
+}
+.header_logo {
+	padding-top:14px;
+}
+.header_logo p {
+	padding-top:6px;
+}
+.header_l p span {
+	color:#2d8ef3;
+}
+.header_l p a:hover {
+	color:#666666;
+}
+.header_r {
+	float:left;
+	width:650px;
+	margin-top:30px;
+	position:relative;
+}
+.header_r_d {
+	padding:10px 0px 0px;
+	clear:both;
+	height:15px;
+	line-height:15px;
+}
+.header_r_d span {
+	padding:0px 4px;
+}
+#searchForm{
+    z-index:6;
+}
+.header_search {
+	border:2px solid #0a75e7;
+	width:586px;
+	margin-left:0;
+	height:36px;
+	position:relative;
+	float:left;
+	z-index:6;
+	font-family:"Microsoft YaHei";
+}
+.header_search .stxt {
+	border:none;
+	width:502px;
+	float:left;
+	padding:3px 0px 3px 8px;
+	line-height:30px;
+	height:30px;
+	background:#ffffff;
+	font-family:"Microsoft YaHei";
+}
+.header_search .sbtn {
+	background:url(http://res.360kad.com/theme/default/img/2014NewWeb/search.jpg) no-repeat;
+	border:none;
+	width:76px;
+	height:36px;
+	font-size:0px;
+	cursor:pointer;
+	background-size:76px 36px;
+}
+.header_r .header_search_fine {
+	float:left;
+	padding:10px 0px 0px 10px;
+}
+.header_r .header_search_fine a {
+	font-size:12px;
+}
+
+.header_r_d a,.header_r_d a:hover,.Ymykad a,.Ymyorder a,.tphone a {
+	color:#959595;
+}
+.header_r_d a {
+	margin-right:15px;
+}
+.YnewNoLogin a {
+	color:#0a75e7;
+	padding:0 4px;
+}
+.YnewNoLogin a:hover {
+	color:red;
+}
+
+
+// 顶部悬浮
+.fixed_searchBox {
+    position: fixed;
+    top: -70px;
+    z-index: 4;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 4px 0 5px #3e3e3e;
+    border-bottom: 1px solid #dddddd;
+    height: 50px;
+}
+
+.fixed_searchBox .search_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    img {
+        border: none;
+        vertical-align: top;
+    }
+}

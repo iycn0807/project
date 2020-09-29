@@ -13,6 +13,25 @@ define([], function () {
                     $li.eq(index).find(".priceC").html("￥" + value.price);
                 })
             })
+
+            // // 换一批 
+            // $change = $('.changeBtn');
+            // $change.on('click',function(){
+            //     console.log(1);
+            //     $.ajax({
+            //         url: "http://localhost/JS2007/projectname/php/render.php",
+            //         dataType: "json"
+    
+            //     }).done(function (data) {
+            //         $.each(data, function (index, value) {
+            //             $li.eq(index).find("img").attr("src", value.url);
+            //             $li.eq(index).find(".nameC a").html(value.title);
+            //             $li.eq(index).find(".priceC").html("￥" + value.price);
+            //         })
+            //     })
+            // })
+
+
             //顶部悬浮
             const $nav = $('#fixed_searchBox');
             const $form = $('#searchForm');
@@ -101,9 +120,9 @@ define([], function () {
                 tabswitch();
             });
 
-            timer = setInterval(function () {
-                $right.click()
-            }, 1000);
+            // timer = setInterval(function () {
+            //     $right.click()
+            // }, 1000);
             //封装轮播函数
             function tabswitch() {
                 if ($num > $btnli.size() - 1) {
@@ -119,41 +138,71 @@ define([], function () {
                     "opacity": 1
                 })
                 $btnli.eq($num).addClass('active').siblings().removeClass('active');
-            }
-              //懒加载
-                $(window).on('scroll', function() {
-            let $imgtop = $('img').offset().top; //图片top值
-            let $scrolltop = $(window).scrollTop(); //滚动条的top值
-            console.log($scrolltop);
-            let $clientheight = $(window).height(); //可视区的高度
-            if ($imgtop < $scrolltop + $clientheight) {
-                //图片的top值<可视化高度+滚动条的top值
-                //满足条件，进入可视区，图片加载路径
-                $('img').attr('src', $('img').attr('_src'));
-            }
-        });
-            //切换
-            const $leftarrow = $('.direction .l img');
-            const $rightarrow = $('.direction .r img');
-            const $ulleft = $('#hotProC ul');
-            $leftarrow.on('click',function(){
-                // if($ulleft.left = 0){
-                    console.log(1);
-                    $ulleft.css("left", -1198);
-                // }
+            };
+            //懒加载
+            $(window).on('scroll', function () {
+                let $imgtop = $('img').offset().top; //图片top值
+                let $scrolltop = $(window).scrollTop(); //滚动条的top值
+                console.log($scrolltop);
+                let $clientheight = $(window).height(); //可视区的高度
+                if ($imgtop < $scrolltop + $clientheight) {
+                    //图片的top值<可视化高度+滚动条的top值
+                    //满足条件，进入可视区，图片加载路径
+                    $('img').attr('src', $('img').attr('_src'));
+                }
             });
+            //切换
+            const $leftarrow = $('.direction .r img');
+            const $rightarrow = $('.direction .s img');
+            const $ulleft = $('#hotProC ul');
+            const $liwidth = $('#hotProC ul li');
+            const $num1 = $('.hotPage .reduction')
+            $leftarrow.on('click', function () {
+                if ($ulleft.offset().left < 0) {
+                    $ulleft.stop().animate({
+                        "left": 0
+                    })
+                    $num1.text(1)
+                } else {
+                    $ulleft.stop().animate({
+                        "left": -($liwidth.width() + 1) * 5
+                    })
+                    $num1.text(2)
+                }
+            });
+
+                $rightarrow.on('click', function () {
+                    if ($ulleft.offset().left < 0) {
+                        // $ulleft.offset().left = 0
+                        $ulleft.stop().animate({
+                            // "left": -1198
+                            "left": 0
+                        })
+                        $num1.text(1)
+                    } else {
+                        $ulleft.stop().animate({
+                            // "left": -1198
+                            "left": -($liwidth.width() + 1) * 5
+                        })
+                        $num1.text(2)
+                    }
+                });
+          
+
+
+            //二级菜单
             const $menuli = $('list_t'); //18个li
             const $item = $('.lNav_pop'); //18块内容
             // const $cartlist = $('.cartlist'); //右边的内容框
             //鼠标移入，添加类名，显示右边的内容框
-            $menuli.on('mouseover', function() {
+            $menuli.on('mouseover', function () {
                 $(this).css("display", "block").siblings().css("display", "none")
                 $item.eq($(this).index()).show().siblings('.item').hide(); //当前和li匹配的item显示，其他的隐藏
                 // $cartlist.show();
             });
-            $menuli.on('mouseout', function() {
+            $menuli.on('mouseout', function () {
                 $cartlist.hide();
-    });
+            });
         }
     }
 })

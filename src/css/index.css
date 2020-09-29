@@ -2157,4 +2157,8 @@ li.tcart a {
   width: 100%;
 }
 
+.Ymykad:hover.Ytopnavdiv {
+  display: block;
+}
+
 /*# sourceMappingURL=index.css.map */

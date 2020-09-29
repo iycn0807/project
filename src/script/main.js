@@ -19,14 +19,21 @@ require.config({
 
 // require(['index_module']);//加载模块的方式 
 
-require(['jquery', 'jcookie', 'jlazyload'], function() {
-    let $pagemodule = $("#currentpage").attr("pagemodule");
-    console.log();
-    require([$pagemodule],function(page){
-        page.init();
-        console.log($pagemodule);
-    })
-})
+// require(['jquery', 'jcookie', 'jlazyload'], function() {
+//     let $pagemodule = $("#currentpage").attr("pagemodule");
+//     require([$pagemodule],function(page){
+//         page.init();
+//     })
+// });
+
+require(['jquery'], function() {
+    let page = $('#currentpage').attr('page-origin'); //通过id名或者内部的自定义属性page-origin的值。
+    if (page) {
+        require([page], function(page) {
+            page.init();
+        });
+    }
+});
     //通过不同的页面调用不同的模块
     //1.获取script标签里面的自定义属性data-page
     // let pagemod = $('#currentpage').attr('data-page'); //获取自定义属性的值 index_module lsit_module  detail_module
